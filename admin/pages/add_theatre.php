@@ -15,11 +15,11 @@ include('header.php');
 
     <section class="content-header">
       <h1>
-        Add Theatre
+        Agregar Cine
       </h1>
       <ol class="breadcrumb">
-        <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active">Add Theatre</li>
+        <li><a href="index.php"><i class="fa fa-home"></i> Inicio</a></li>
+        <li class="active">Agregar Cine</li>
       </ol>
     </section>
 
@@ -31,23 +31,22 @@ include('header.php');
         <div class="box-body">
             <form action="process_add_theater.php" method="post" id="form1">
               <div class="form-group">
-                <label class="control-label">Theatre Name</label>
+                <label class="control-label">Nombre Cine </label>
                 <input type="text" name="name" class="form-control"/>
                 <?php $frm->validate("name",array("required","label"=>"Theatre Name"));  ?>
               </div>
               <div class="form-group">
-                <label class="control-label">Theatre Address</label>
+                <label class="control-label">Direccion</label>
                 <input type="text" name="address" class="form-control"/>
                 <?php $frm->validate("address",array("required","label"=>"Theatre Address"));  ?>
               </div>
               <div class="form-group">
-                <label class="control-label">Place</label>
-                <!-- <input type="text" name="place" id="autocomplete" class="form-control"> -->
+                <label class="control-label">Lugar</label>
                 <input type="text" name="place" class="form-control">
                 <?php $frm->validate("place",array("required","label"=>"Place"));  ?>
               </div>
               <div class="form-group">
-                 <label class="control-label">State</label>
+                 <label class="control-label">Estado</label>
                 <input type="text" name="state" id="administrative_area_level_1" s placeholder="State" class="form-control">
                 <?php $frm->validate("state",array("required","label"=>"State"));  ?>
               </div>
@@ -76,7 +75,7 @@ include('header.php');
                 <?php $frm->validate("password",array("required","label"=>"Password"));  ?>
               </div>
               <div class="form-group">
-                <button class="btn btn-success">Add Theatre</button>
+                <button class="btn btn-success">Agregar Cine</button>
               </div>
               <input type="hidden" name="country" class="form-control" id="country">
               <input type="hidden" class="field" id="route" disabled="true">

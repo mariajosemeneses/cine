@@ -8,12 +8,12 @@ include('header.php');
 
     <section class="content-header">
       <h1>
-        Theater Details
+        Detalle Cine
       </h1>
       <ol class="breadcrumb">
-        <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="add_theater.php">Add Theater</a></li>
-        <li class="active">Add Theater Details</li>
+        <li><a href="index.php"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="add_theater.php">Agregar Cine</a></li>
+        <li class="active">Agregar detalles Cine</li>
       </ol>
     </section>
 
@@ -23,7 +23,7 @@ include('header.php');
       
       <div class="box">
          <div class="box-header with-border">
-              <h3 class="box-title">General Details</h3>
+              <h3 class="box-title">Detalles Generales</h3>
             </div>
         <div class="box-body">
           <?php
@@ -32,19 +32,19 @@ include('header.php');
           ?>
             <table class="table table-bordered table-hover">
                 <tr>
-                    <td class="col-md-6">Theater Name</td>
+                    <td class="col-md-6">Nombre Cine</td>
                     <td  class="col-md-6"><?php echo $theatre['name'];?></td>
                 </tr>
                 <tr>
-                    <td>Theater Address</td>
+                    <td>Direccion Cine</td>
                     <td><?php echo $theatre['address'];?></td>
                 </tr>
                 <tr>
-                    <td>Place</td>
+                    <td>Lugar</td>
                     <td><?php echo $theatre['place'];?></td>
                 </tr>
                 <tr>
-                    <td>State</td>
+                    <td>Estado</td>
                     <td><?php echo $theatre['state'];?></td>
                 </tr>
                 <tr>
@@ -56,7 +56,7 @@ include('header.php');
       </div>
          <div class="box">
          <div class="box-header with-border">
-              <h3 class="box-title">Screen Details</h3>
+              <h3 class="box-title"> Detalles Proyecciones</h3>
             </div>
         <div class="box-body" id="screendtls">
           <?php
@@ -66,11 +66,11 @@ include('header.php');
           ?>
             <table class="table table-bordered table-hover">
               <th class="col-md-1">Slno</th>
-              <th class="col-md-3">Screen Name</th>
-              <th class="col-md-1">Seats</th>
-              <th class="col-md-1">Charge</th>
-              <th class="col-md-3">Show Time</th>
-              <th class="text-right col-md-3"><button data-toggle="modal" data-target="#view-modal" id="getUser" class="btn btn-sm btn-info"><i class="fa fa-plus"></i> Add Screen</button></th>
+              <th class="col-md-3">Screen Nombre</th>
+              <th class="col-md-1">Asientos</th>
+              <th class="col-md-1">Carga</th>
+              <th class="col-md-3">Hora de Funcion</th>
+              <th class="text-right col-md-3"><button data-toggle="modal" data-target="#view-modal" id="getUser" class="btn btn-sm btn-info"><i class="fa fa-plus"></i> Agregar Proyeccion</button></th>
                 <?php 
                 $sl=1;
                 while($screen=mysqli_fetch_array($sr))
