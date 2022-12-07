@@ -23,7 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 			  <div class="nav-wrap">
 					<ul class="group" id="example-one">
-			           <li><a href="index.php">Home</a></li>
+			           <li><a href="index.php">Inicio</a></li>
 			           <li><a href="about.php">About</a></li>
 			  		   <li><a href="peliculas_events.php">peliculas & Events</a></li>
 			  		   <li class="current_page_item"><a href="contact.php">Contact</a></li>

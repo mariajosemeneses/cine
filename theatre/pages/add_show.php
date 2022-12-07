@@ -16,11 +16,11 @@ include('header.php');
 
     <section class="content-header">
       <h1>
-        Add Show
+        Agregar Funcion
       </h1>
       <ol class="breadcrumb">
-        <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active">Add Show</li>
+        <li><a href="index.php"><i class="fa fa-home"></i>Inicio </a></li>
+        <li class="active">Agregar Funcion</li>
       </ol>
     </section>
 
@@ -49,9 +49,9 @@ include('header.php');
               <?php $frm->validate("pelicula",array("required","label"=>"pelicula"));  ?>
             </div>
             <div class="form-group">
-              <label class="control-label">Seleccionar Pantalla</label>
+              <label class="control-label">Seleccionar Proyeccion</label>
               <select name="screen" class="form-control" id="screen">
-                <option value>Select Screen</option>
+                <option value>Selecionar Proyeccion</option>
                 <?php
                   $sc=mysqli_query($con,"select * from tbl_screens where t_id='".$_SESSION['theatre']."'");
                   while($screen=mysqli_fetch_array($sc))
