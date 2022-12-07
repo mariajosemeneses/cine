@@ -35,8 +35,8 @@ $theatre=mysqli_fetch_array($th);
 
   <header class="main-header">
     <a href="index.php" class="logo">
-      <span class="logo-mini"><b>T</b>A</span>
-      <span class="logo-lg"><b>Administrador</b> de Cine</span>
+      <span class="logo-mini"><img src="../../images/Logo.png" alt="Logo" width="50" height="50"/></span>
+      
     </a>
     <nav class="navbar navbar-static-top">
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -63,7 +63,7 @@ $theatre=mysqli_fetch_array($th);
               </li>
               <li class="user-footer">
                 <div class="pull-right">
-                  <a href="logout.php" class="btn btn-default btn-flat">Logout</a>
+                  <a href="logout.php" class="btn btn-default btn-flat">Salir</a>
                 </div>
               </li>
             </ul>
@@ -80,7 +80,7 @@ $theatre=mysqli_fetch_array($th);
     <section class="sidebar">
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="cinema.png" class="img-circle" alt="User Image">
+          <img src="../../images/Logo.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p><?php echo $theatre['name'];?></p>

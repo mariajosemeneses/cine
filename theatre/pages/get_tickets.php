@@ -15,19 +15,19 @@
          <h3><small>pelicula : </small><?php echo $pelicula['pelicula_name'];?></h3>
         <table class="table">
             <th>
-                Slno
+                Sala N°
             </th>
             <th>
-                Ticket id
+                N° Ticket
             </th>
             <th>
-                Viewer Name
+                Nombre 
             </th>
             <th>
-                Phone
+                Telefono
             </th>
             <th>
-                Number of Tickets
+                Numero de Tickets
             </th>
         <?php
     $sl=1;

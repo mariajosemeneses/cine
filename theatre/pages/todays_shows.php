@@ -8,11 +8,11 @@ include('header.php');
 
     <section class="content-header">
       <h1>
-        Todays Shows
+        Funciones del Dia
       </h1>
       <ol class="breadcrumb">
-        <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active">Todays Shows</li>
+        <li><a href="index.php"><i class="fa fa-home"></i> Inicio</a></li>
+        <li class="active">Funciones del Dia</li>
       </ol>
     </section>
 
@@ -22,7 +22,7 @@ include('header.php');
       
       <div class="box">
          <div class="box-header with-border">
-              <h3 class="box-title">Available Shows</h3>
+              <h3 class="box-title">Funciones disponibles</h3>
             </div>
         <div class="box-body">
           <?php
@@ -78,7 +78,7 @@ include('header.php');
           else
           {
             ?>
-            <h3>No Shows Added</h3>
+            <h3>No se Agregaron Funciones</h3>
             <?php
           }
           ?>

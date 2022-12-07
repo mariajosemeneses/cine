@@ -8,11 +8,11 @@ include('header.php');
 
     <section class="content-header">
       <h1>
-        peliculas List
+        Peliculas
       </h1>
       <ol class="breadcrumb">
-        <li><a href="index"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">peliculas List</li>
+        <li><a href="index"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li class="active">Peliculas</li>
       </ol>
     </section>
 
@@ -40,12 +40,7 @@ include('header.php');
                         <i class="fa fa-film"></i>
                         
                       </span>
-                  <!-- checkbox -->
-                  <!-- todo text -->
                   <span class="text"><?php echo $c['pelicula_name'];?></span>
-                  <!-- Emphasis label -->
-                  
-                  <!-- General tools such as edit or delete-->
                   <div class="tools">
                     
                     <button class="fa fa-trash-o" onclick="del(<?php echo $c['pelicula_id'];?>)"></button>
@@ -70,7 +65,7 @@ include('footer.php');
 <script>
 function del(m)
     {
-        if (confirm("Are you want to delete this pelicula") == true) 
+        if (confirm("¿Quiere eliminar esta pelicula?") == true) 
         {
             window.location="del_pelicula.php?mid="+m;
         } 

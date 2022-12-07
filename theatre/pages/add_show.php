@@ -104,7 +104,7 @@ include('footer.php');
 			$('#stime').html(data);    
 		})
 		.fail(function(){
-			$('#stime').html('<option><i class="glyphicon glyphicon-info-sign"></i> Something went wrong, Please try again...</option>');
+			$('#stime').html('<option><i class="glyphicon glyphicon-info-sign"></i> Algo salió mal. Por favor, vuelva a intentarlo...</option>');
 		});
   });
 </script>
