@@ -150,9 +150,9 @@ include('header.php');
                        	       <option value="0">Seleccionar Funcion</option>
                        	       <option>Media dia</option>
                        	       <option>Vermouth</option>
-                       	       <option>Mañana/option>
+                       	       <option>Manana</option>
                        	       <option>Trade</option>
-                       	       <option>Others</option>
+                       	       <option>Noche</option>
                        	     </select>
                        	   </div>
                        	   <div class="form-group">
