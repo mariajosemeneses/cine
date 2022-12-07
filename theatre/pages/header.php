@@ -50,12 +50,12 @@ $theatre=mysqli_fetch_array($th);
         <ul class="nav navbar-nav">
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="cinema.png" class="user-image" alt="User Image">
+              <img src="../../images/Logo.png" alt="Logo" width="50" height="50"/>
               <span class="hidden-xs"><?php echo $theatre['name'];?></span>
             </a>
             <ul class="dropdown-menu">
               <li class="user-header">
-                <img src="cinema.png" class="img-circle" alt="User Image">
+                <img src="../../images/Logo.png" alt="Logo" width="50" height="50"/>
 
                 <p>
                   Administrador de Cine

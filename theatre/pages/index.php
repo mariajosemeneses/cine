@@ -32,8 +32,8 @@ include('header.php');
               <table class="table table-condensed">
                 <tr>
                   <th class="col-md-1">No</th>
+                  <th class="col-md-4">Proyeccion</th>
                   <th class="col-md-3">Tiempo de la Funcion</th>
-                  <th class="col-md-4">Pantalla</th>
                   <th class="col-md-4">Pelicula</th>
                 </tr>
                 <?php 
