@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrícula de imágenes - By Parzibyte</title>
+    <!--
+			https://parzibyte.me/blog
+		-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .columna {
+            float: left;
+            width: 33%;
+            padding-right: 5px;
+        }
+        
+        .fila::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        img {
+            /* Para que sea responsiva */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fila">
+        <div class="columna">
+            <img src="https://picsum.photos/800/600">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
