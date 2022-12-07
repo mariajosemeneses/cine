@@ -3,7 +3,13 @@
 <div class="content">
 	<div class="wrap">
 		<div class="content-top">
-			<center><h1 style="color:#555;">Cartelera</h1></center>
+		<div class="row">
+				<div class="col-md-12">
+					<div class="titlepage">
+						<h2>Cartelera</h2>
+					</div>
+				</div>
+			</div>
 			
 			<?php
           	 $today=date("Y-m-d");
