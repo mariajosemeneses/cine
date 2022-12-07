@@ -5,11 +5,11 @@ include('header.php');
   <div class="content-wrapper">
     <section class="content-header">
       <h1>
-        peliculas List
+        Proximos Estrenos
       </h1>
       <ol class="breadcrumb">
-        <li><a href="index"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">peliculas List</li>
+        <li><a href="index"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li class="active">Proximos Estrenos</li>
       </ol>
     </section>
 

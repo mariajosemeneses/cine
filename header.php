@@ -65,7 +65,7 @@ date_default_timezone_set('America/Guayaquil');
 function myFunction() {
      if($('#hero-demo').val()=="")
         {
-            alert("Please enter pelicula name...");
+            alert("Porfavor Ingrese el nombre de la Pelicula");
             return false;
         }
     else{

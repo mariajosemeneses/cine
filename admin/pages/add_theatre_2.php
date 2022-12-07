@@ -89,7 +89,7 @@ include('header.php');
                     else
                     {echo "No Show Time Added";}
                     ?></td>
-                    <td class="text-right"><button data-toggle="modal" data-id="<?php echo $screen['screen_id'];?>" data-target="#view-modal2" id="getUser2" class="btn btn-sm btn-warning"><i class="fa fa-plus"></i> Add Show Times</button></td>
+                    <td class="text-right"><button data-toggle="modal" data-id="<?php echo $screen['screen_id'];?>" data-target="#view-modal2" id="getUser2" class="btn btn-sm btn-warning"><i class="fa fa-plus"></i> Agregar Hora de Funciones</button></td>
                   </tr>
                   <?php
                   $sl++;
