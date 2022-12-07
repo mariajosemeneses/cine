@@ -37,7 +37,7 @@
 							<div class="col-md-8">
 								<div class="news_text">
 									<h3><a href="about.php?id=<?php echo $m['pelicula_id']; ?>"><?php echo $m['pelicula_name']; ?></a></h3>
-									<span class="data">Release Date: <?php echo $m['release_date']; ?></span>
+									<span class="data">Fecha de Estreno: <?php echo $m['release_date']; ?></span>
 									<p>Descripcion:<?php echo $m['desc']; ?></p>
 
 								</div>

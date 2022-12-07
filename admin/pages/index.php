@@ -56,7 +56,7 @@ include('footer.php');
 <script>
 function del(m)
     {
-        if (confirm("Are you want to delete this pelicula") == true) 
+        if (confirm("Desea eliminar esta pelicula") == true) 
         {
             window.location="process_delete_pelicula.php?mid="+m;
         } 
