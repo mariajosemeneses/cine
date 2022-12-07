@@ -43,7 +43,7 @@ include('header.php');
                 Pelicula
               </th>
               <th class="col-md-3">
-                Opci
+                Opciones
               </th>
               <?php
               $sl=1;
@@ -74,14 +74,14 @@ include('header.php');
                   <td>
                     <?php if($shows['r_status']==1)
                     {
-                    ?><a href="change_running.php?id=<?php echo $shows['s_id'];?>&status=0"><button class="btn btn-danger">Stop Running</button></a>
+                    ?><a href="change_running.php?id=<?php echo $shows['s_id'];?>&status=0"><button class="btn btn-danger">Pausa</button></a>
                     <?php
                     }
                     else
-                    {?><a href="change_running.php?id=<?php echo $shows['s_id'];?>&status=1"><button class="btn btn-success">Start Running</button></a>
+                    {?><a href="change_running.php?id=<?php echo $shows['s_id'];?>&status=1"><button class="btn btn-success">Empezar</button></a>
                     <?php 
                     }?>
-                    <a href="stop_running.php?id=<?php echo $shows['s_id'];?>"><button class="btn btn-warning">Stop Show</button></a>
+                    <a href="stop_running.php?id=<?php echo $shows['s_id'];?>"><button class="btn btn-warning">Terminar Funcion</button></a>
                   </td>
                 </tr>
                 <?php
@@ -93,7 +93,7 @@ include('header.php');
           else
           {
             ?>
-            <h3>No Shows Added</h3>
+            <h3>No se Agregaron Funciones</h3>
             <?php
           }
           ?>

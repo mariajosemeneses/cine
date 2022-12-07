@@ -13,30 +13,30 @@
 		<div class="content-top" style="min-height:300px;padding:50px">
 			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-default">
-				  <div class="panel-heading">Register</div>
+				  <div class="panel-heading">Registarse</div>
 				  <div class="panel-body">
 				<form action="process_registration.php" method="post" id="form1">
 				    <div class="form-group has-feedback">
-        <input name="name" type="text" size="25" placeholder="Name" class="form-control"/>
+        <input name="name" type="text" size="25" placeholder="Nombre" class="form-control"/>
         <?php $frm->validate("name",array("required","label"=>"Name","regexp"=>"name"));  ?>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input name="age" type="text" size="25" placeholder="Age" class="form-control"/>
+        <input name="age" type="text" size="25" placeholder="Edad" class="form-control"/>
         <?php $frm->validate("age",array("required","label"=>"Age","regexp"=>"age"));  ?>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
         <select name="gender" class="form-control">
-            <option value>Select Gender</option>
-            <option>Male</option>
-            <option>Female</option>
+            <option value>Genero</option>
+            <option>Masculino</option>
+            <option>Femenino</option>
         </select>
         <?php $frm->validate("gender",array("required","label"=>"Gender"));  ?>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input name="phone" type="text" size="25" placeholder="Mobile Number" class="form-control"/>
+        <input name="phone" type="text" size="10" placeholder="Telefono" class="form-control"/>
         <?php $frm->validate("phone",array("required","label"=>"Mobile Number","regexp"=>"mobile"));  ?>
         <span class="glyphicon glyphicon-phone form-control-feedback"></span>
       </div>
@@ -56,7 +56,7 @@
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="form-group">
-          <button type="submit" class="btn btn-primary">Continue</button>
+          <button type="submit" class="btn btn-primary">Registrarse</button>
       </div>
       </div>
 </div>

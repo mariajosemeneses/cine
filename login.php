@@ -8,7 +8,7 @@
 				  <div class="panel-heading">Login</div>
 				  <div class="panel-body">
 				  	<?php include('msgbox.php');?>
-				<p class="login-box-msg">Sign in to start your session</p>
+				<p class="login-box-msg">Iniciar Sesion</p>
 				<form action="process_login.php" method="post">
       <div class="form-group has-feedback">
         <input name="Email" type="text" size="25" placeholder="Email" class="form-control" placeholder="Email"/>
@@ -21,7 +21,7 @@
       <div class="form-group">
           <button type="submit" class="btn btn-primary">Login</button>
  
-          <p class="login-box-msg" style="padding-top:20px">New Here? <a href="registration.php">Register</a></p>
+          <p class="login-box-msg" style="padding-top:20px">No tienes cuenta? <a href="registration.php">Registrarse</a></p>
       </div>
       </div>
 </div>

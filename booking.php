@@ -17,10 +17,10 @@ if(!isset($_SESSION['user']))
 									<img src="<?php echo $pelicula['image']; ?>" alt=""/>
 								</div>
 								<div class="desc span_3_of_2">
-									<p class="p-link" style="font-size:15px"><b>Cast : </b><?php echo $pelicula['cast']; ?></p>
-									<p class="p-link" style="font-size:15px"><b>Release Date : </b><?php echo date('d-M-Y',strtotime($pelicula['release_date'])); ?></p>
+									<p class="p-link" style="font-size:15px"><b>Actores : </b><?php echo $pelicula['cast']; ?></p>
+									<p class="p-link" style="font-size:15px"><b>Fecha de estreno : </b><?php echo date('d-M-Y',strtotime($pelicula['release_date'])); ?></p>
 									<p style="font-size:15px"><?php echo $pelicula['desc']; ?></p>
-									<a href="<?php echo $pelicula['video_url']; ?>" target="_blank" class="watch_but">Watch Trailer</a>
+									<a href="<?php echo $pelicula['video_url']; ?>" target="_blank" class="watch_but">Ver Trailer</a>
 								</div>
 								<div class="clear"></div>
 							</div>
@@ -60,7 +60,7 @@ if(!isset($_SESSION['user']))
 									</tr>
 									<tr>
 										<td>
-											Date
+											Fecha
 										</td>
 										<td>
 											<?php 
@@ -94,7 +94,7 @@ if(!isset($_SESSION['user']))
 									</tr>
 									<tr>
 										<td>
-											Show Time
+											Hora de la Funcion
 										</td>
 										<td>
 											<?php echo date('h:i A',strtotime($ttme['start_time']))." ".$ttme['name'];?> Show
@@ -102,7 +102,7 @@ if(!isset($_SESSION['user']))
 									</tr>
 									<tr>
 										<td>
-											Number of Seats
+											Numero de Asientos
 										</td>
 										<td>
 											<form  action="process_booking.php" method="post">
@@ -114,7 +114,7 @@ if(!isset($_SESSION['user']))
 									</tr>
 									<tr>
 										<td>
-											Amount
+											Valor Total
 										</td>
 										<td id="amount" style="font-weight:bold;font-size:18px">
 											Rs <?php echo $screen['charge'];?>
@@ -122,7 +122,7 @@ if(!isset($_SESSION['user']))
 									</tr>
 									<tr>
 										<td colspan="2"><?php if($avl[0]==$screen['seats']){?><button type="button" class="btn btn-danger" style="width:100%">House Full</button><?php } else { ?>
-										<button class="btn btn-info" style="width:100%">Book Now</button>
+										<button class="btn btn-info" style="width:100%">Reservar ahora</button>
 										<?php } ?>
 										</form></td>
 									</tr>

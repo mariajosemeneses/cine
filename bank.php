@@ -20,7 +20,7 @@ extract($_POST);
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<title>OMTBS</title>
+<title>Proyecto_Cine</title>
 <link href="css/bank.css" rel="stylesheet" type="text/css"/>
 
 
@@ -31,13 +31,13 @@ extract($_POST);
 
 <div id="mainContainer" class="row large-centered">
 
-  <div class="text-center"><h2>BANK</h2></div>
+  <div class="text-center"><h2>Pagar</h2></div>
   
   <hr class="divider">
   <dl class="mercDetails">
-  	<dt>Merchant</dt> 				<dd>Shop Street</dd>
-    <dt>Transaction Amount</dt> 	<dd>INR <?php echo  $_SESSION['amount'];?></dd>
-    <dt>Debit Card</dt> 		<dd><?php echo  $number;?></%></dd>
+  	<dt>Concepto</dt> 				<dd>Entradas de cine</dd>
+    <dt>Valor a pagar</dt> 	<dd>$ <?php echo  $_SESSION['amount'];?></dd>
+    <dt>Numero de la Tarjeta</dt> 		<dd><input size ="12" type="text" name="number" value="" placeholder="273xxxxxx98"></dd>
   </dl>
   <hr class="divider">
   
@@ -45,8 +45,8 @@ extract($_POST);
 <form name="form1" id="form1" method="post" action="complete_payment.php">
 <fieldset class="page2">
 <div class="page-heading">
-<h6 class="form-heading">Authenticate Payment</h6>
-<p class="form-subheading">OTP sent to your mobile number ending with <strong>1343</strong></p>
+<h6 class="form-heading">Codigo de Autentificacion</h6>
+<p class="form-subheading">Ingrese el codigo enviado a su numero terminado en <strong>362</strong></p>
 
 
 </div>
@@ -54,19 +54,19 @@ extract($_POST);
 <div class="row formInputSection">
 <div class="large-7 columns">
 <label>
-  Enter One Time Password (OTP)
+ Codigo
   <input type="tel" name="otp"  class="form-control optPass" value="" maxlength="6" autocomplete="off"/>
 </label>
 </div>
 <div class="large-5 columns">
-<label>&nbsp;</label><button class="expanded button next" onClick="ValidateForm()">Make Payment</button>
+<label>&nbsp;</label><button class="expanded button next" onClick="ValidateForm()">Realizar Pago</button>
 </div>
 </div>
-<div class="text-right resendBtn requestOTP"><a class="request-link" href="javascript:void(0)">Resend OTP</a></div>
+<div class="text-right resendBtn requestOTP"><a class="request-link" href="javascript:void(0)">Reenviar Codigo</a></div>
 <p>
 
 
-<a class="tryAgain" href="complete_order.jsp">Go back</a> to merchant
+<a class="tryAgain" href="complete_order.jsp">Regresar</a> 
 </p>
 </fieldset>
 
@@ -79,7 +79,7 @@ document.onmousedown = rightclickD; function rightclickD(e) { e = e||event; if (
 function ValidateForm() { 
 	var regPin = RegExp("^[0-9]{4,6}$");
 	if( document.form1.customerpin.value == "" || !document.form1.customerpin.value.match(regPin) ) {	 
-		alert("Please enter a valid 6 digit One Time Password (OTP) receive on your registered Mobile Number."); document.form1.customerpin.focus(); return false;  
+		alert("Ingrese un codigo válido de 4 dígitos enviado a su número de teléfono registrado."); document.form1.customerpin.focus(); return false;  
 	}
     else
         {

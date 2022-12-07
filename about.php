@@ -13,10 +13,10 @@
 									<img src="<?php echo $pelicula['image']; ?>" alt=""/>
 								</div>
 								<div class="desc span_3_of_2">
-									<p class="p-link" style="font-size:15px"><b>Cast : </b><?php echo $pelicula['cast']; ?></p>
-									<p class="p-link" style="font-size:15px"><b>Release Date : </b><?php echo date('d-M-Y',strtotime($pelicula['release_date'])); ?></p>
+									<p class="p-link" style="font-size:15px"><b>Actores : </b><?php echo $pelicula['cast']; ?></p>
+									<p class="p-link" style="font-size:15px"><b>Fecha de EStreno : </b><?php echo date('d-M-Y',strtotime($pelicula['release_date'])); ?></p>
 									<p style="font-size:15px"><?php echo $pelicula['desc']; ?></p>
-									<a href="<?php echo $pelicula['video_url']; ?>" target="_blank" class="watch_but" style="text-decoration:none;">Watch Trailer</a>
+									<a href="<?php echo $pelicula['video_url']; ?>" target="_blank" class="watch_but" style="text-decoration:none;">Ver Trailer</a>
 								</div>
 								<div class="clear"></div>
 							</div>
@@ -24,12 +24,12 @@
 							if(mysqli_num_rows($s))
 							{?>
 							<table class="table table-hover table-bordered text-center">
-								<h3 style="color:#444;" class="text-center">Available Shows</h3>
+								<h3 style="color:#444;" class="text-center">Funciones Disponibles</h3>
 
 								<thead>
 										<tr>
-											<th class="text-center" style="font-size:16px;"><b>Theatre</b></th>
-											<th class="text-center" style="font-size:16px;"><b>Show Timings</b></th>
+											<th class="text-center" style="font-size:16px;"><b>Cine</b></th>
+											<th class="text-center" style="font-size:16px;"><b>Hora de la Funcion</b></th>
 										</tr>
 									</thead>
 							<?php
@@ -75,8 +75,8 @@
 							else
 							{
 								?>
-								<h3 style="color:#444; font-size:23px;" class="text-center">Currently there are no any shows available!</h3>
-								<p class="text-center">Please check back later!</p>
+								<h3 style="color:#444; font-size:23px;" class="text-center">Actualmente no hay funciones disponibles!</h3>
+								<p class="text-center">Por favor, vuelva más tarde!</p>
 								<?php
 							}
 							?>

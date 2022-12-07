@@ -11,7 +11,7 @@ if(!isset($_SESSION['user']))
 		<div class="content-top">
 				<div class="section group">
 					<div class="about span_1_of_2">	
-						<h3 style="color:black;" class="text-center">BOOKING HISTORY</h3>
+						<h3 style="color:black;" class="text-center">Historial de Reservas</h3>
 						<?php include('msgbox.php');?>
 						<?php
 				$bk=mysqli_query($con,"select * from tbl_bookings where user_id='".$_SESSION['user']."'");
@@ -20,13 +20,13 @@ if(!isset($_SESSION['user']))
 					?>
 					<table class="table table-bordered">
 						<thead>
-						<th>Booking Id</th>
-						<th>pelicula</th>
-						<th>Theatre</th>
-						<th>Screen</th>
-						<th>Show</th>
-						<th>Seats</th>
-						<th>Amount</th>
+						<th>N° Reserva</th>
+						<th>Pelicula</th>
+						<th>Cine</th>
+						<th>Proyeccion</th>
+						<th>Funcion</th>
+						<th>Asientos</th>
+						<th>Valor</th>
 						<th></th>
 						</thead>
 						<tbody>
@@ -73,7 +73,7 @@ if(!isset($_SESSION['user']))
 									}
 									else
 									{?>
-									<a href="cancel.php?id=<?php echo $bkg['book_id'];?>" style="text-decoration:none; color:red;">Cancel</a>
+									<a href="cancel.php?id=<?php echo $bkg['book_id'];?>" style="text-decoration:none; color:red;">Cancelar</a>
 									<?php
 									}
 									?>
@@ -88,8 +88,8 @@ if(!isset($_SESSION['user']))
 				else
 				{
 					?>
-					<h3 style="color:red;" class="text-center">No Previous Bookings Found!</h3>
-					<p>Once you start booking pelicula tickets with this account, you'll be able to see all the booking history.</p>
+					<h3 style="color:red;" class="text-center">No se Encontraron Reservas Previas</h3>
+					<p>Tus neuvas reservas se guardaran aqui</p>
 					<?php
 				}
 				?>
