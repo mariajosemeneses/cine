@@ -1,13 +1,8 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Free Theater Website Template | Contact :: w3layouts</title>
+<title>Proyecto_Cine</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></script>
@@ -19,14 +14,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="header-top">
 		<div class="wrap">
 			<div class="h-logo">
-			<a href="index.php"><img src="images/logo.png" alt=""/></a>
+			<a href="index.php"><img src="images/Logo.png" alt="Logo" width="150" height="150"/></a>
 		</div>
 			  <div class="nav-wrap">
 					<ul class="group" id="example-one">
-			           <li><a href="index.php">Home</a></li>
-			           <li><a href="about.php">About</a></li>
-			  		   <li><a href="peliculas_events.php">peliculas & Events</a></li>
-			  		   <li class="current_page_item"><a href="contact.php">Contact</a></li>
+			           <li><a href="index.php">Inicio</a></li>
+			           <li><a href="about.php">Nosotros</a></li>
+			  		   <li><a href="peliculas_events.php">Peliculas</a></li>
+			  		   <li class="current_page_item"><a href="contact.php">Contacto</a></li>
 			        </ul>
 			  </div>
  			<div class="clear"></div>
@@ -38,15 +33,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <form action="#" id="reservation-form" method="post">
 		       <fieldset>
 		                <div class="field">
-			                 <label>Find a pelicula:</label>
+			                 <label>Buscar pelicula:</label>
 			                  <select class="select2">
-			                    <option>pelicula list</option>
+			                    <option>Proximos Estrenos</option>
 			                  </select>
 			            </div>
 		                <div class="field1">
-			                   <label>Search</label>
+			                   <label>Buscar</label>
 			                  <select class="select1">
-			                    <option>peliculas or Actors</option>
+			                    <option>Peliculas por Actores</option>
 			                  </select>
 		                </div>
 		       </fieldset>
@@ -61,10 +56,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="section group">
 				<div class="col span_2_of_3">
 				  <div class="contact-form">
-				  	<h3>Contact Us</h3>
+				  	<h3>Contactate Con Nosotros</h3>
 					    <form action="process_contact.php" method="post" name="form11">
 					    	<div>
-						    	<span><label>NAME</label></span>
+						    	<span><label>Nombre</label></span>
 						    	<span><input type="text" value="" required name="name"></span>
 						    </div>
 						    <div>
@@ -72,34 +67,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    	<span><input type="text" value="" required name="email"></span>
 						    </div>
 						    <div>
-						     	<span><label>MOBILE.NO</label></span>
+						     	<span><label>Telefono</label></span>
 						    	<span><input type="number" value="" required name="mobile"></span>
 						    </div>
 						    <div>
-						    	<span><label>SUBJECT</label></span>
+						    	<span><label>Observacion</label></span>
 						    	<span><textarea required name="subect"> </textarea></span>
 						    </div>
 						   <div>
-						   		<span><input type="submit">Submit</span>
+						   		<span><input type="submit">Enviar</span>
 						  </div>
 					    </form>
 				  </div>
   				</div>
 				<div class="col span_1_of_3">
 					<div class="contact_info">
-    	 				<h3>Find Us Here</h3>
+    	 				<h3>Encuéntrenos aquí</h3>
 					    	  <div class="map">
 							   	    <iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>
 							  </div>
       				</div>
       			<div class="company_address">
-				     	<h3>Company Information :</h3>
-						    	<p>500 Lorem Ipsum Dolor Sit,</p>
-						   		<p>22-56-2-9 Sit Amet, Lorem,</p>
-						<p>Phone:(00) 222 666 444</p>
-				   		<p>Fax: (000) 000 00 00 0</p>
-				 	 	<p>Email: <span>info@mycompany.com</span></p>
-				   		<p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
+				     	
 				   </div>
 				 </div>
 			  </div>
@@ -111,16 +100,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="wrap">
 			<div class="footer-top">
 				<div class="col_1_of_4 span_1_of_4">
-					<div class="footer-nav">
-		                <ul>
-		                   <li><a href="">Our Tips of gallery Template diam</a></li>
-		                    <li><a href="">Our Tips of gallery Template diam</a></li>
-		                     <li><a href="">Our Tips of gallery Template diam</a></li>
-		                       <li><a href="">Our Tips of gallery Template diam</a></li>
-		                   </ul>
-		              </div>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
 					<div class="textcontact">
 						<p>consectetuer adipiscing elit,<br>
 						consectetuer<br>
@@ -131,7 +110,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<div class="call_info">
-						<p class="txt_3">Call us toll free:</p>
+						<p class="txt_3">Llamar al </p>
 						<p class="txt_4">1 800 234 23456</p>
 					</div>
 				</div>
@@ -150,7 +129,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="footer-bottom">
 	<div class="wrap">
 	<div class="copy">
-		<p>All rights Reserved | Design by <a href="http://w3layouts.com">W3Layouts</a></p>
+		<p>Todos los derechos Reservados | Diseñado por <a href="">Grupo #/a></p>
 	</div>
  	</div>
 </div>
