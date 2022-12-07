@@ -39,7 +39,7 @@
 						<div class="tarjeta-wrap">
 							<div class="tarjeta">
 								<div class="adelante card1">
-									<img src="admin/<?php echo $n['attachment']; ?>">
+									<img width="200%" height="150%"  src="admin/<?php echo $n['attachment']; ?>">
 								</div>
 								<div class="atras">
 									
