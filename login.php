@@ -3,19 +3,22 @@
 <div class="content">
     <div class="wrap">
         <div class="content-top" style="min-height:300px;padding:50px">
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-md-6 col-md-offset-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">Login</div>
                     <div class="panel-body">
                         <?php include('msgbox.php'); ?>
-                        <p class="login-box-msg">Iniciar Sesion</p>
+                        <h4 class="login-box-msg">Iniciar Sesion</h4>
+                        <b><hr></b>
                         <form action="process_login.php" method="post">
                             <div class="form-group has-feedback">
-                                <input name="Email" type="text" size="25" placeholder="Email" class="form-control" placeholder="Email" />
+                            <label>Correo Electronico</label>
+                                <input name="Email" type="text" size="25" placeholder="Ingrese su email" class="form-control" placeholder="Email" />
                                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                             </div>
                             <div class="form-group has-feedback">
-                                <input name="Password" type="password" size="25" placeholder="Password" class="form-control" placeholder="Password" />
+                            <label>Contraseña</label>
+                                <input name="Password" type="password" size="25" placeholder="Ingrese su password" class="form-control" placeholder="Password" />
                                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                             </div>
                             <div class="form-group">

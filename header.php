@@ -49,37 +49,38 @@ date_default_timezone_set('America/Guayaquil');
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <!-- body -->
+
 <body class="main-layout">
 	<header>
 		<div class="header">
-		<div class="header_top d_none1">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-4">
-                        <ul class="conta_icon ">
-                           <li><a href="#"><img src="css2/images/call.png" alt="#"/>Contactanos: +593 - 987 - 256 - 2365</a> </li>
-                        </ul>
-                     </div>
-                     <div class="col-md-4">
-                        <ul class="social_icon">
-                           <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
-                              </a>
-                           </li>
-                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                    
-                           <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="se_fonr1">
-                           <span class="time_o"> Abierto de: 8.00 - 18.00</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
+			<div class="header_top d_none1">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<ul class="conta_icon ">
+								<li><a href="#"><img src="css2/images/call.png" alt="#" />Contactanos: +593 - 987 - 256 - 2365</a> </li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul class="social_icon">
+								<li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+
+								<li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<div class="se_fonr1">
+								<span class="time_o"> Abierto de: 8.00 - 18.00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="header_midil">
 				<div class="container">
 					<div class="row d_flex">
@@ -106,10 +107,10 @@ date_default_timezone_set('America/Guayaquil');
 											if (isset($_SESSION['user'])) {
 												$us = mysqli_query($con, "select * from tbl_registration where user_id='" . $_SESSION['user'] . "'");
 												$user = mysqli_fetch_array($us);
-												?>
+											?>
 												<a class="nav-link" href="profile.php"><?php echo $user['name']; ?></a>
 										<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
-										<?php } else { ?><li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+									<?php } else { ?><li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
 										<li class="nav-item"><a class="nav-link" href="registration.php">Registarse</a></li><?php } ?>
 									</li>
 									</ul>
