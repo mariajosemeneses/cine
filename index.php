@@ -16,16 +16,8 @@
 	include('header.php');
 	?>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<?php include('pelicula_sidebar.php'); ?>
-			</div>
-		</div>
-	</div>
 
-
-	<div class="news">
+<div class="news">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -74,6 +66,20 @@
 	<br><br>
 	<br><br>
 	<br><br>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<?php include('pelicula_sidebar.php'); ?>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	
 
 
 
