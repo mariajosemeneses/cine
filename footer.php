@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <h6>Sistema de cine online</h6>
-                    <p class="text-justify">is an initiative to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+                    <p class="text-justify">es una iniciativa para ayudar a los futuros programadores con el código. El grupo se enfoca en proporcionar el código o los fragmentos más eficientes, ya que el código quiere ser simple. Ayudaremos a los programadores a desarrollar conceptos en diferentes lenguajes de programación que incluyen C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL y Algorithm.</p>
                 </div>
 
 
