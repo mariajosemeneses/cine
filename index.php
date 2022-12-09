@@ -15,8 +15,6 @@
 	<?php
 	include('header.php');
 	?>
-
-
 <div class="news">
 		<div class="container">
 			<div class="row">

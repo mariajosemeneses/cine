@@ -3,7 +3,6 @@ include('config.php');
 session_start();
 date_default_timezone_set('America/Guayaquil');
 ?>
-
 <!DOCTYPE HTML>
 <html>
 
