@@ -34,6 +34,7 @@ date_default_timezone_set('America/Guayaquil');
 	<link rel="stylesheet" href="css2/css/bootstrap.min.css">
 	<!-- style css -->
 	<link rel="stylesheet" href="css2/css/style.css">
+
 	<!-- Responsive-->
 	<link rel="stylesheet" href="css2/css/responsive.css">
 	<!-- fevicon -->
@@ -48,9 +49,7 @@ date_default_timezone_set('America/Guayaquil');
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <!-- body -->
-
 <body class="main-layout">
-
 		<div class="header">
 			<div class="header_top d_none1">
 				<div class="container">
@@ -80,15 +79,6 @@ date_default_timezone_set('America/Guayaquil');
 					</div>
 				</div>
 			</div>
-			<div class="header_midil">
-				<div class="container">
-					<div class="row d_flex">
-						<div class="col-md-12">
-							<a class="logo" href="index.php"><img src="images/logo.png" alt="#" /></a>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="header_bottom">
 				<div class="container">
 					<div class="row">
@@ -102,7 +92,7 @@ date_default_timezone_set('America/Guayaquil');
 										<li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
 										<li class="nav-item"><a class="nav-link" href="peliculas_events.php">Cartelera</a></li>
 										<li class="nav-item">
-											<?php
+										<?php
 											if (isset($_SESSION['user'])) {
 												$us = mysqli_query($con, "select * from tbl_registration where user_id='" . $_SESSION['user'] . "'");
 												$user = mysqli_fetch_array($us);
@@ -134,7 +124,26 @@ date_default_timezone_set('America/Guayaquil');
 					</div>
 				</div>
 			</div>
+			<div class="header_midil">
+				<div class="container">
+					<div class="row d_flex">
+						<div class="col-md-12">
+							<a class="logo" href="index.php"><img src="images/logo.png" alt="#" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-container">
+  					<div class="image-card perspective-left"></div>
+  					<div class="image-card perspective-right"></div>
+			</div>
+			
 		</div>
+		
+		
+		
+		
+	<!-- Busqueda de la Pelicula	 -->
 	<script>
 		function myFunction() {
 			if ($('#hero-demo').val() == "") {
