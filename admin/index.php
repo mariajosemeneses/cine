@@ -21,7 +21,7 @@
   <!-- /.login-logo -->
   <div class="login-box-body">
     <?php session_start(); include('../msgbox.php');?>
-    <p class="login-box-msg">Porfavor inicie sesion/p>
+    <p class="login-box-msg">Porfavor inicie sesion </p>
 <form action="pages/process_login.php" method="post">
       <div class="form-group has-feedback">
         <input name="Email" type="text" size="25" placeholder="Username" class="form-control"/>

@@ -51,7 +51,7 @@ $theatre=mysqli_fetch_array($th);
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../../images/Logo.png" alt="Logo" width="50" height="50"/>
-              <span class="hidden-xs"><?php echo $theatre['name'];?></span>
+              <span class="hidden-xs"><?php echo $theatre['name'];?> </span>
             </a>
             <ul class="dropdown-menu">
               <li class="user-header">
@@ -91,7 +91,7 @@ $theatre=mysqli_fetch_array($th);
       <ul class="sidebar-menu">
         <li class="treeview">
           <a href="index.php">
-            <i class="fa fa-home"></i> <span>Inicio/span>
+            <i class="fa fa-home"></i> <span>Inicio </span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
