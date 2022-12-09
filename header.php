@@ -50,7 +50,7 @@ date_default_timezone_set('America/Guayaquil');
 <!-- body -->
 
 <body class="main-layout">
-	<header>
+
 		<div class="header">
 			<div class="header_top d_none1">
 				<div class="container">
@@ -135,7 +135,6 @@ date_default_timezone_set('America/Guayaquil');
 				</div>
 			</div>
 		</div>
-	</header>
 	<script>
 		function myFunction() {
 			if ($('#hero-demo').val() == "") {
